@@ -5,15 +5,15 @@ app = FastAPI()
 
 @app.get("/")
 def ola_mundo():
-    return{"teste":"Olá mundo!"}
+    return {"teste":"Olá mundo!"}
 
 @app.get("/teste")
 def teste():
-    return{"teste":"testando"}
+    return {"teste":"testando"}
 
 @app.get("/alunos")
 def alunos():
-    return{"nome":"andré","turma":"imi3"}
+    return {"nome":"andré","turma":"imi3"}
 
 if __name__ == '__main__':
     uvicorn.run(app, host='0.0.0.0', port=8000)
